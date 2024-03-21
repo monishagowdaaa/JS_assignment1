@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Example</title>
+</head>
+<body>
+  <h1>Welcome!</h1>
+  <p id="message">This is a message.</p>
+  <button id="change-button">Change Message</button>
+  <script>
+    // Get references to elements
+const messageElement = document.getElementById("message");
+const changeButton = document.getElementById("change-button");
+
+// Function to change the message
+function changeMessage() {
+  messageElement.textContent = "The message has been changed!";
+}
+
+// Add event listener to the button
+changeButton.addEventListener("click", changeMessage);
+  </script>
+</body>
+</html>
